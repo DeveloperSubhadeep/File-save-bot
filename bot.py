@@ -13,6 +13,7 @@ logging.getLogger().setLevel(logging.INFO)
 logging.getLogger("pyrogram").setLevel(logging.ERROR)
 
 class Bot(Client): 
+    HEALTH_CHECK_PORT = 8080
     def __init__(self):
         super().__init__(
             Config.BOT_SESSION,
